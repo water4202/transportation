@@ -154,6 +154,7 @@ int main(int argc, char **argv){
   trajectory_profile p1,p2,p3,p4,p5,p6,p7,p8;
   std::vector<trajectory_profile> data;
 
+<<<<<<< HEAD
     p1.pos << 0.1,0.1,0;
     p1.vel << 0,0,0;
     p1.acc << 0,0,0;
@@ -193,6 +194,47 @@ int main(int argc, char **argv){
     p8.vel << 0,0,0;
     p8.acc << 0,0,0;
     p8.yaw = 0;
+=======
+  p1.pos<< 1,1,0;
+  p1.vel<< 0,0,0;
+  p1.acc<< 0,0,0;
+  p1.yaw = 0;
+
+  p2.pos<< 3,5,0;
+  p2.vel<< 0,0,0;
+  p2.acc<< 0,0,0;
+  p2.yaw = 0;
+
+  p3.pos << 12,0,0;
+  p3.vel << 0,0,0;
+  p3.acc << 0,0,0;
+  p3.yaw = 0;
+
+  p4.pos << 3,-5,0;
+  p4.vel << 0,0,0;
+  p4.acc << 0,0,0;
+  p4.yaw = 0;
+
+  p5.pos<< -3,5,0;
+  p5.vel<< 0,0,0;
+  p5.acc<< 0,0,0;
+  p5.yaw = 0;
+
+  p6.pos << -12,0,0;
+  p6.vel << 0,0,0;
+  p6.acc << 0,0,0;
+  p6.yaw = 0;
+
+  p7.pos << -3,-5,0;
+  p7.vel << 0,0,0;
+  p7.acc << 0,0,0;
+  p7.yaw = 0;
+
+  p8.pos << 0,0,0;
+  p8.vel << 0,0,0;
+  p8.acc << 0,0,0;
+  p8.yaw = 0;
+>>>>>>> ba759ca4b808f4c920724b13595e12c4c20e83be
 
   path.push_back(segments(p1,p2,4.0));
   path.push_back(segments(p2,p3,4.0));
