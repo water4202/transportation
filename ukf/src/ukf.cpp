@@ -57,7 +57,7 @@ ukf::ukf(int state_size , int measurement_size){
 void ukf::predict(){
 
   //find sigma point
-  P=(lambda+L)*(P+Q);
+  P=(lambda+L)*(P);
   Eigen::MatrixXd M = (P).llt().matrixL();
   Eigen::MatrixXd buffer;
 

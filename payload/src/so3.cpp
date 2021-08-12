@@ -44,9 +44,7 @@ void imu1_cb(const sensor_msgs::Imu::ConstPtr& msg){
 }
 
 Eigen::Vector3d PL;
-nav_msgs::Odometry leader_pose;
 void odometry_cb(const nav_msgs::Odometry::ConstPtr& msg){
-  leader_pose = *msg;
 
   PL << msg->pose.pose.position.x, msg->pose.pose.position.y, msg->pose.pose.position.z;
 
